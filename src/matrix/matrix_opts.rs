@@ -151,6 +151,7 @@ pub unsafe fn multiply_matrix_nalgebra() {
     matrix1.fill(1.1);
     matrix2.fill(2.2);
     let c: Matrix128x128 = matrix1 * matrix2;
+    c;
 }
 
 #[cfg(test)]
