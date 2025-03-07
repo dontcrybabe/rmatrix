@@ -1,0 +1,19 @@
+[package]
+name = "rmatrix"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rayon = "1.10.0"
+nalgebra = "0.33.2"
+
+[dev-dependencies]
+criterion = "0.5.1"
+
+[[bench]]
+name = "matrix_bench"
+harness = false
+
+[[bench]]
+name = "matrix_nalgebra"
+harness = false
