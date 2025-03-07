@@ -143,7 +143,7 @@ pub unsafe fn compute_block_sum(
     block_sum.iter().take(block_end - block_start).sum()
 }
 
-unsafe fn multiply_matrix_nalgebra_as_test() {
+pub unsafe fn multiply_matrix_nalgebra() {
     type Matrix128x128 = SMatrix<f64, 128, 128>;
 
     let mut matrix1 = Matrix128x128::zeros();
